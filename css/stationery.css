@@ -1,48 +1,85 @@
-.grid-container{
+#grid-container {
     width: 80%;
     display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    margin-left: 7%;
 }
-.grid-item{
-    background-color:white;
+
+.grid-item {
+    background-color: white;
     padding: 20px;
-    text-align: center;
-    /* border: 1px solid #ccc; */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    
+    border-top: 2px green solid;
+    align-items: center;
 }
-.grid-item:hover{
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+
+.grid-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-.grid-item img{
-   width: 100%;
+
+.grid-item img {
+    width: 100%;
+   height: 70%;
 }
+
+.grid-item price {
+    float: left;
+}
+
+/* 
+ .grid-item h3{
+    background-color: rgb(241, 220, 224) ;
+    width: 100%;
+    position: relative;
+    top: 0;
+ } */
+.grid-item button {
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.grid-item button:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
 /* #nav{
     width: 100px;
     height: 100vh;
     background-color: palevioletred;
     grid-area: nav;
 } */
-@media only screen and (max-width: 1000px)  {
-    .grid-container{
-      
-          grid-template-columns: repeat(3, 1fr);
-          gap: 50px;
-    }  
+
+@media only screen and (max-width: 800px) {
+    .grid-container {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
 }
-@media only screen and (max-width: 800px)  {
-    .grid-container{
-      
-          grid-template-columns: repeat(2, 1fr);
-          gap: 40px;
-    }  
-}
-@media only screen and (max-width: 500px)  {
-    .grid-container{
-      
-          grid-template-columns: repeat(1,1fr);
-          gap: 40px;
-    }  
+
+@media only screen and (max-width: 500px) {
+    .grid-container {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
 }
