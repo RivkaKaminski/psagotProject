@@ -1,3 +1,3 @@
-import {createStaitionaryCards} from "./creatorsForHtml.js";
+import {createCards} from "./creatorsForHtml.js";
 
-createStaitionaryCards("craft",document);
+createCards("craft",document);

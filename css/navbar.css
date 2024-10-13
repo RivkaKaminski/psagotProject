@@ -1,13 +1,10 @@
 #nav-bar {
-    background-color: rgb(203, 196, 196);
-    min-width: 235px;
-    width: 15%;
-    flex-direction: column;
-    min-width: 235px;
+    
+    position: fixed;
     width: 10%;
+    flex-direction: column;
     padding-top: 40px;
     padding-left: 20px;
-    position: absolute;
     right: 0;
     padding: 10px;
 }
@@ -21,14 +18,28 @@ nav h2 {
     background-color: white;
     /* רקע לכל תגית h2 */
     transition: background-color 0.3s;
+    border-bottom: 1px green solid;
 }
 
 nav h2:hover {
-    background-color: lightblue;
+    background-color:  #9cb6a5;
 
 }
 
 .active {
     background-color: lightblue;
     /* הדגשת פריט פעיל, כמו בתמונה ששלחת */
+}
+#nav-select{
+display: none;
+float: right;
+}
+@media only screen and (max-width: 800px) {
+    #nav-bar{
+        display: none;
+    }
+    #nav-select{
+        display: block;
+        background-color: rgb(95, 123, 90);
+    }
 }

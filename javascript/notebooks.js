@@ -1,3 +1,4 @@
-import {createStaitionaryCards} from "./creatorsForHtml.js";
+import {createCards} from "./creatorsForHtml.js";
 
-createStaitionaryCards("notebooks",document);
+createCards("notebooks",document);
+
